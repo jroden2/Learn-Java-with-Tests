@@ -1,10 +1,10 @@
-package com.github.jroden2.learnjavawithtests.helloworld.v4;
+package com.github.jroden2.learnjavawithtests.helloworld.v5;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class v4MainTest {
+class v5MainTest {
 
     @Test
     void testTemplateFormat() {
@@ -16,6 +16,14 @@ class v4MainTest {
 
     @Test
     void greet() {
+        var got = main.greet();
+        String expected = "Hello, World.";
+
+        assertEquals(got, expected);
+    }
+
+    @Test
+    void greetWithName() {
         var got = main.greet("Jack");
         String expected = "Hello, Jack.";
 
@@ -23,7 +31,7 @@ class v4MainTest {
     }
 
     @Test
-    void greetWithEmptyString() {
+    void greetWithEmptyString_EmptyString() {
         var got = main.greet("");
         String expected = "Hello, World.";
 
@@ -31,11 +39,12 @@ class v4MainTest {
     }
 
     @Test
-    void greetWithEmptyString_Fails() {
+    void greetWithEmptyString_Space() {
         var got = main.greet(" ");
         String expected = "Hello, World.";
 
-        assertNotEquals(got, expected);
+        assertEquals(got, expected);
     }
+
 
 }
