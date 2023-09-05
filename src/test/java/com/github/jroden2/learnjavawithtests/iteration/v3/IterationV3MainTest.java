@@ -1,10 +1,10 @@
-package com.github.jroden2.learnjavawithtests.iteration.v2;
+package com.github.jroden2.learnjavawithtests.iteration.v3;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class v2MainTest {
+class IterationV3MainTest {
 
     @Test
     void repeat() {
@@ -38,5 +38,12 @@ class v2MainTest {
         assertEquals(got, expected);
     }
 
+    @Test
+    void reverseString() {
+        String got = main.reverseString("hello");
+        String expected = "olleh";
+
+        assertEquals(got, expected);
+    }
 
 }

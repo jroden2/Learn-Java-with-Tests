@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-class v2MainTest {
+class HelloWorldV2MainTest {
 
     @Test
     public void TestGreetVar() {

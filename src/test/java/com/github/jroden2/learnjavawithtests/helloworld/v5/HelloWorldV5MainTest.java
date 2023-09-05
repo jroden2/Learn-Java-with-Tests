@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class v5MainTest {
+class HelloWorldV5MainTest {
 
     @Test
     void testTemplateFormat() {

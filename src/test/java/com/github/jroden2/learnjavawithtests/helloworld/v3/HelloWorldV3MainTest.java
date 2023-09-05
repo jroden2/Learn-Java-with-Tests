@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class v3MainTest {
+class HelloWorldV3MainTest {
 
     @Test
     void greet() {
